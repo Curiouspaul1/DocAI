@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/css/diagnostic.css">
+    <link rel="stylesheet" href="../../static/css/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top">
+    <h1 class="logo">DiagAI👩‍⚕️</h1>
+    <span>ID:Patient 0001</span>
+</div>
+    <form action="/diagnose" method="post" class="diagnostic--form">
+        <div class="patient--details">
+            <div>
+                <label for="patient_name">Patient Name:</label>
+                <input type="text" name="patient_name" id="patient_name">
+            </div>
+            <div>
+                <label for="illness">Disability/Family Illness:</label>
+                <input type="text" name="illness" id="illness">
+            </div>
+            
+        </div>
+        <textarea name="symptoms" id="symptoms" cols="30" rows="10" placeholder="Start typing your symptoms, seperate the comma....."></textarea>
+        <button type="Submit" class="diagnostic--btn">Submit</button>
+    </form>
+</body>
+</html>
